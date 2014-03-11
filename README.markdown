@@ -20,8 +20,8 @@
 ## 1\. About
   This is a C++ package for multi-armed bandit simulations. 
   This package is designed to be
-    Simple : easy to understand and extend, but not optimized for speed. 
-    Independent : does not require external library.
+  1. Simple : easy to understand and extend, but not optimized for speed. 
+  2. Independent : does not require external library.
 
 + Arms:
  - Binary and Normal distribution of rewards (arms) are implemented.
@@ -38,7 +38,8 @@
 <a name="environment"></a>
 
 ## 2\. Environment
-  This program supports linux/GNU C++ environment. We do not check windows/MacOSX.
+  This program supports a linux/GNU C++ environment. We do not check windows/MacOSX.
+  
   More formally, this program depends on:
   - C++0x: modern C++ compiler (preferably GNU C++ (g++))
   -  waf (included) [7]: build script
@@ -47,18 +48,17 @@
 <a name="quick"></a>
 
 ## 3\. Quick run
-  type 
-'''
-   ./compile
-   ./build/main -r 10
-'''
+  Type 
+  
+    ./compile
+    ./build/main -r 10
+    
   to run 10 simulation runs. The result of the runs will be written in out/example1.txt
 
   This package also includes a simple plot tool (simpleplot.py) that is dependent on Python/Matplotlib.
   If your environment is g++/Python ready, try
-'''
- ./example.sh
-'''
+  
+    ./example.sh
 
 <a name="misc"></a>
 
