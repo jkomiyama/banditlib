@@ -1,0 +1,3 @@
+./waf clean
+./waf configure
+./waf 
