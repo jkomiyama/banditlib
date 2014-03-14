@@ -49,7 +49,7 @@ public:
     Gi2[k]+=r*r;
   }
   virtual std::string toString(){
-    std::string str="UCB-V Arm with amp=";
+    std::string str="UCB-V Policy with amp=";
     str+=dtos(amp);
     str+=" zeta=";
     str+=dtos(zeta);

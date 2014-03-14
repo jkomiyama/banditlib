@@ -64,7 +64,7 @@ public:
     Gi[k]+=r;
   }
   virtual std::string toString(){
-    std::string str="KL-UCB Arm with c=0";
+    std::string str="KL-UCB Policy with c=0";
     return str;
   }
 };

@@ -37,7 +37,7 @@ public:
     Gi[k]+=r;
   }
   virtual std::string toString(){
-    std::string str="UCB Arm with alpha=";
+    std::string str="UCB Policy with alpha=";
     str+=dtos(alpha);
     return str;
   }

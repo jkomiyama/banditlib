@@ -41,7 +41,7 @@ public:
     Gi[k]+=r;
   }
   virtual std::string toString(){
-    std::string str="Egreedy Arm with epsilonCoef=";
+    std::string str="Egreedy Policy with epsilonCoef=";
     str+=dtos(epsilonCoef);
     return str;
   }
