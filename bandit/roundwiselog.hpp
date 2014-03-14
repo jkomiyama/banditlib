@@ -16,7 +16,7 @@ public:
     roundwiseRegrets = std::vector<std::vector<double> >(P, std::vector<double>(T, 0.0));
     run=0;
   }
-  //start new run
+  //start new run 
   void startRun(){
     run+=1;
   }
