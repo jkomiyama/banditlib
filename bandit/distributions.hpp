@@ -2,6 +2,7 @@
 
 #include "util.hpp"
 
+
 //This implementation of Beta distribution is from
 //  http://stackoverflow.com/questions/15165202/random-number-generator-with-beta-distribution
 
