@@ -8,21 +8,9 @@ namespace bandit{
 class Arm{
 public:
   //base functions should not be called
-  virtual double pull(){
-    std::cout << "unexpected base Arm::pull function call" << std::endl;
-    abort();
-    return 0;
-	}
-  virtual double getExpectedReward(){
-    std::cout << "unexpected base Arm::getExpectedReward function call" << std::endl;
-    abort();
-    return 0;
-  }
-  virtual std::string toString(){
-    std::cout << "unexpected base Arm::toString function call" << std::endl;
-    abort();
-    return "";
-  }
+  virtual double pull() = 0;
+  virtual double getExpectedReward() = 0;
+  virtual std::string toString() = 0;
 };
 
 } //namespace

@@ -9,20 +9,9 @@ namespace bandit{
 class Policy{
 public:
   //base functions should not be called
-  virtual int selectNextArm(){
-    std::cout << "unexpected base Policy::selectNextArm function call" << std::endl;
-    abort();
-    return -1;
-	}
-  virtual void updateState(int, double){
-    std::cout << "unexpected base Policy::updateState function call" << std::endl;
-    abort();
-  }
-  virtual std::string toString(){
-    std::cout << "unexpected base Policy::toString function call" << std::endl;
-    abort();
-    return "";
-  }
+  virtual int selectNextArm() = 0;
+  virtual void updateState(int, double) = 0;
+  virtual std::string toString() = 0;
 };
 
 } //namespace
