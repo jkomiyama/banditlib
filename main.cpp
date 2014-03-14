@@ -25,6 +25,7 @@ void example1(const uint T, const uint RunNum){
   RoundwiseLog log(K, P, T) ;
   vector<ArmPtr> arms;
   vector<PolicyPtr> policies;
+  cout << "Simulating " << RunNum << " runs." << endl;
   for(uint run=0;run<RunNum;++run){
     cout << "run=" << run << endl;
     arms.clear();
@@ -38,6 +39,10 @@ void example1(const uint T, const uint RunNum){
     arms.push_back( ArmPtr(new BernoulliArm(0.01)) );
     arms.push_back( ArmPtr(new BernoulliArm(0.01)) );
     arms.push_back( ArmPtr(new BernoulliArm(0.01)) );
+    if(K != arms.size()){
+      cout << "arm size does not match" << endl;
+      abort();
+    }
     policies.clear();
     policies.push_back( PolicyPtr(new RandomPolicy(K)) );
     policies.push_back( PolicyPtr(new EGreedyPolicy(K)) );
@@ -47,6 +52,10 @@ void example1(const uint T, const uint RunNum){
     policies.push_back( PolicyPtr(new KLUCBPolicy(K)) );
     policies.push_back( PolicyPtr(new DMEDBinaryPolicy(K)) );
     policies.push_back( PolicyPtr(new ThompsonBinaryPolicy(K)) );
+    if(P != policies.size()){
+      cout << "policy size does not match" << endl;
+      abort();
+    }
     Simulator<RoundwiseLog> sim(arms, policies);
     sim.run(log, T);
   }
