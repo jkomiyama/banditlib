@@ -16,11 +16,11 @@ namespace bandit{
 
 typedef unsigned int uint;
 
-const double pi = 3.14159265;
-const double e  = 2.718281828;
+extern const double pi;
+extern const double e;
 
 //RNG engine
-std::mt19937 randomEngine(std::time(0));
+extern std::mt19937 randomEngine;
 
 template<class T>
 int vectorMaxIndex(const std::vector<T> &elems){
@@ -55,20 +55,7 @@ T vectorSum(const std::vector<T> &elems){
   return s;
 }
 
-//int -> string
-std::string itos(int number)
-{
-  std::stringstream ss;
-  ss << number;
-  return ss.str();
-}
-
-//double -> string
-std::string dtos(double number)
-{
-  std::stringstream ss;
-  ss << number;
-  return ss.str();
-}
+std::string itos(int number);
+std::string dtos(double number);
 
 } //namespace
