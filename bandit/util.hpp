@@ -26,7 +26,7 @@ template<class T>
 int vectorMaxIndex(const std::vector<T> &elems){
   int m=0;
   T mv=elems[0];
-  for(unsigned int i=0;i<elems.size();++i){
+  for(uint i=0;i<elems.size();++i){
     if(elems[i]>mv){
       mv=elems[i];
       m=i;
@@ -38,7 +38,7 @@ int vectorMaxIndex(const std::vector<T> &elems){
 template<class T>
 T vectorMax(std::vector<T> &elems){
   T mv=elems[0];
-  for(unsigned int i=0;i<elems.size();++i){
+  for(uint i=0;i<elems.size();++i){
     if(elems[i]>mv){
       mv=elems[i];
     }
