@@ -71,14 +71,23 @@
   
 ##References
     [1] J. Honda, A. Takemura: An asymptotically optimal policy for finite support models in the multiarmed bandit problem.  Machine Learning 85(3) 2011, p.361-391
+    
     [2] Aurélien Garivier, Olivier Cappé: The KL-UCB Algorithm for Bounded Stochastic Bandits and Beyond. COLT 2011: 359-376
+    
     [3] J-Y. Audibert and S. Bubeck: Minimax Policies for Adversarial and Stochastic Bandits.  Proceedings of the 22nd Annual Conference on Learning Theory 2009
+    
     [4] Thompson, William R: On the likelihood that one unknown probability exceeds another in view of the evidence of two samples. Biometrika, 25(3–4):285–294, 1933
+    
     [5] Peter Auer, Nicolò Cesa-Bianchi and Paul Fische: Finite-time analysis of the multiarmed bandit problem.  Machine Learning 47 2002 p.235-256
+    
     [6] J.-Y. Audibert, R. Munos, Cs. Szepesvári: Exploration-exploitation trade-off using variance estimates in multi-armed bandits. Theoretical Computer Science Volume 410 Issue 19 Apr. 2009 pp. 1876-1902
+    
     [7] Waf - The meta build system: https://code.google.com/p/waf/
+    
     [8] Hideyuki Tanaka: cmdline https://github.com/tanakh/cmdline
-    [9] Joseph Mansfield: A comment on stackoverflow http://stackoverflow.com/questions/15165202/random-number-generator-with-beta-distribution
+    
+    [9] Joseph Mansfield: A comment on stackoverflow http://stackoverflow.com/questions/15165202/random-number-generat
+    
     [10] Text to Ascii Art Maker: http://patorjk.com/software/taag/
 
 ##Author
