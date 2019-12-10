@@ -34,7 +34,8 @@ def readFile(afile):
       sps = line.split(" ")
       data.append(sps)
   data = map(list, zip(*data)) #transpose 2d array
-  data = list(map(thin, data)) #reduce data points
+  data = np.array(list(map(thin, data))) #reduce data points
+  data = data.astype(np.float)
   return (algs, data)
 
 def plotRegret(args):
